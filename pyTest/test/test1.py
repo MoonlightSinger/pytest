@@ -20,10 +20,11 @@ cj = http.cookiejar.CookieJar()
 opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
 file_t=open('ttt.html','w',100,encoding='utf-8')
 f=opener.open(s)
+print(f)
+print(f.geturl())
+print(f.getcode())
+print(dict(f.headers))
 file_t.writelines(f.read().decode('utf-8'))
 file_t.flush
 file_t.close
-print(f.geturl())
-print(f.getcode())
-print(f.headers)
 
