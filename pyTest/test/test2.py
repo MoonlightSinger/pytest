@@ -124,30 +124,38 @@ def getUrlRespHtml(url, postDict={}, headerDict={}, timeout=0, useGzip=True, pos
     return respHtml;
 
 #------------------------------------------------------------------------------
-def download1():
-        #demo auto handle cookie
+def downloadPic(picAddr, min_Length=50000,savePath=''):
+    resp = getUrlResponse(picAddr, postDict={}, headerDict={}, timeout=0, useGzip=False, postDataDelimiter="&")
+    if int(dict(resp.headers)['Content-Length']) > min_Length:
+        savePath=savePath+picAddr.split('/')[-1]
+        file_t = open(savePath, 'wb', buffering=1000)
+        file_t.write(resp.read())
+        print(savePath)
+        file_t.flush
+        file_t.close
+#------------------------------------------------------------------------------
+def findNextHtml():
+    pass
+def spiderPic(htmlStr):
+    htmlStr
+#------------------------------------------------------------------------------
+def downloadHtml(demoUrl,picRex,nextHtmlFunc):
+    #demo auto handle cookie
     initAutoHandleCookies("localCookie.txt");
-    demoUrl = "http://koreanracequeens.tumblr.com/page/88";
+    # = "http://koreanracequeens.tumblr.com/page/88";
     respHtml = getUrlRespHtml(demoUrl);
     t=respHtml.decode('utf-8')
     print ("respHtml=",t);
-    file_t=open('ttt.html','w',100,encoding='utf-8')
-    file_t.write(respHtml.decode('utf-8'))
-    file_t.flush
-    file_t.close
-    p = re.compile(r'(src|href)="(http://\S+?/([\S^/]+\.jpg))"')
+#     file_t=open('ttt.html','w',100,encoding='utf-8')
+#     file_t.write(respHtml.decode('utf-8'))
+#     file_t.flush
+#     file_t.close
+#     p = re.compile(r'(src|href)="(?P<picHttpAddr>http://\S+?/([\S^/]+\.jpg))"')
+    p = re.compile(picRex)
     for m in p.finditer(t):
-        print(m.group())
-        local_filename=m.group(3)
-        print(m.group(2))
-        resp=getUrlResponse(m.group(2),postDict={}, headerDict={}, timeout=0, useGzip=False, postDataDelimiter="&")
-        min_Length=50000
-        if int(dict(resp.headers)['Content-Length']) > min_Length:
-            file_t=open(local_filename,'wb',buffering=1000)
-            file_t.write(resp.read())
-            print(local_filename)
-            file_t.flush
-            file_t.close
+        print(m.group('picHttpAddr'))
+        downloadPic(m.group('picHttpAddr'))
+    return t
 #------------------------------------------------------------------------------
 def download2(demoUrl,dir):
         #demo auto handle cookie
