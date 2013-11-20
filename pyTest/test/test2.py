@@ -134,7 +134,7 @@ def downloadPic(picAddr, min_Length=50000,savePath=''):
         file_t.flush
         file_t.close
 #------------------------------------------------------------------------------
-def findNextHtml():
+def findNextHtml(nowHtml,nextRex):
     pass
 def spiderPic(htmlStr):
     htmlStr
