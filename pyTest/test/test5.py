@@ -5,7 +5,7 @@ Created on 2013-11-25
 '''
 import subprocess
 import re
-print('12ÊúµÄ')
+print('12ÊúµÄ1')
 t = subprocess.Popen('ping 10.181.83.78', stdin = subprocess.PIPE,stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = False)   
 s=t.stdout.read()
 print(t.stdout)
