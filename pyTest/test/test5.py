@@ -1,7 +1,7 @@
 # coding: GBK
 '''
 Created on 2013-11-25
-@author: yutao
+@author: yutao 
 '''
 import subprocess
 import re
