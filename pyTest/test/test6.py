@@ -24,10 +24,11 @@ def getLanDict():
     for temps in listt:
         ts = temps.strip()
         ts2 = re.split(r'[\s\.]+:\s*', ts)
-        lanDict[ts2[0]] = ts2[1]
-        print(ts2)
-    print(lanDict['IPv4 地址'])
-    print(lanDict['网卡名字'])
+        if len(ts2)==2:
+            lanDict[ts2[0]] = ts2[1]
+            print(ts2)
+    #print(lanDict['IPv4 地址'])
+    #print(lanDict['网卡名字'])
     return lanDict
 if __name__=="__main__":
     getLanDict()
