@@ -8,15 +8,16 @@ Created on 2013-11-27
 import time
 import subprocess
 import re
+#import test.test6
 def getLanDict():
     t = subprocess.Popen(['ipconfig', '/all'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
     s = t.stdout.read()
     ss = s.decode(encoding='gbk')
     #'''
-    tt=open('123.txt', mode='w',  encoding='gbk',newline='')
-    tt.write(ss)
-    tt.flush()
-    tt.close()
+    #tt=open('123.txt', mode='w',  encoding='gbk',newline='')
+    #tt.write(ss)
+    #tt.flush()
+    #tt.close()
     #'''
     rex = r'以太网适配器 (本地连接.*?):\r\n\r\n(.+?)\r\n\r\n'
     rs = re.search(rex, ss, re.DOTALL)
@@ -62,6 +63,12 @@ def getOfferIp():
     ipDict['DNS 服务器']='none'
     ipDict['默认网关']='none'
     changeToStatic(ipDict)
-    input('执行完毕！')
+
 if __name__=="__main__":
-    getOfferIp();
+    while True:
+        getOfferIp()
+        s=input('执行完毕！回车重新获得IP，输入任意值退出！')
+        if(s!=''):
+            break
+    print('感谢使用，祝你有开心的一天！\n\r')
+    time.sleep(1.5)
