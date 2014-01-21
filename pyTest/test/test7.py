@@ -8,6 +8,7 @@ Created on 2013-11-27
 import time
 import subprocess
 import re
+import test6
 #import test.test6
 def getLanDict():
     t = subprocess.Popen(['ipconfig', '/all'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
