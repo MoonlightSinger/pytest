@@ -8,18 +8,18 @@ Created on 2013-11-27
 import time
 import subprocess
 import re
-import test6
+
 #import test.test6
 def getLanDict():
     t = subprocess.Popen(['ipconfig', '/all'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
     s = t.stdout.read()
     ss = s.decode(encoding='gbk')
-    #'''
-    #tt=open('123.txt', mode='w',  encoding='gbk',newline='')
-    #tt.write(ss)
-    #tt.flush()
-    #tt.close()
-    #'''
+    
+    ##tt=open('123.txt', mode='w',  encoding='gbk',newline='')
+    ##tt.write(ss)
+    ##tt.flush()
+    ##tt.close()
+    
     rex = r'以太网适配器 (本地连接.*?):\r\n\r\n(.+?)\r\n\r\n'
     rs = re.search(rex, ss, re.DOTALL)
     rs1 = rs.group(2)

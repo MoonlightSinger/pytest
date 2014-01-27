@@ -8,7 +8,7 @@
 <link rel="stylesheet" media="screen" type="text/css" href="http://ts.daumcdn.net/custom/blog/27/279973/skin/style.css?_T_=1366679848" />
 <link rel="stylesheet" media="print" type="text/css" href="http://ts.daumcdn.net/custom/blog/27/279973/skin/images/print.css" />
 <link rel="shortcut icon" href="/favicon.ico" />
-<title>Photo by IL Luce :: into the frame...暗示法</title>
+<title>Photo by IL Luce :: 허윤미</title>
 <script type="text/javascript">
 //<![CDATA[
 // png24 hack for ie6
@@ -112,13 +112,13 @@ var servicePath = "";
 var blogURL = "";
 var s_trackbackUrlCopied = "엮인글 주소가 복사되었습니다";
 var s_trackbackUrlCopyFailed = "엮인글 주소를 복사하지 못했습니다";
-var SCRIPT_VERSION = '35299';
+var SCRIPT_VERSION = '36020';
 //]]>
 </script>
 <script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/120919102824/blog/script/lib/jigu/jigu-latest.min.js"></script>
 <script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/130902133405/blog/script/T.js"></script>
 <script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/121017170257/blog/script/EAF2.js"></script>
-<script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/130806175724/blog/script/common.js"></script>
+<script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/140107095858/blog/script/common.js"></script>
 <script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/110613175039/blog/script/gallery.js"></script>
 <script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/flash.js"></script>
 <script type="text/javascript" src="http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/PHON.js"></script>
@@ -165,8 +165,8 @@ var SCRIPT_VERSION = '35299';
 
 				window.location = "/admin";
 				break;
-			case 65: //A
-				window.location = "/category/Portrait/Photographer\'s cut?page=25";
+			case 83: //S
+				window.location = "/category/Portrait/Photographer\'s cut?page=2";
 				break;
 			case 90: //Z
 				window.location = "#recentEntries";
@@ -227,14 +227,13 @@ var SCRIPT_VERSION = '35299';
 		}
 		request.send(queryString);
 	}
-	function commentRequireLoginByDormancy() {
-				if(confirm("'Photo by IL Luce' 블로그는 휴면 상태로 댓글을 남기시려면 티스토리에 로그인하셔야 합니다. 지금 로그인하시겠습니까?")) {
-			window.location = "http://illuce.tistory.com/login?requestURI=http%3A%2F%2Filluce.tistory.com%2Fcategory%2FPortrait%2FPhotographer%2527s%2520cut%3Fpage%3D26";
+	function commentRequireLogin() {
+		if(confirm("'Photo by IL Luce' 블로그에 댓글을 남기시려면 티스토리에 로그인하셔야 합니다. \n 지금 로그인하시겠습니까?")) {
+			window.location = "http://illuce.tistory.com/login?requestURI=http%3A%2F%2Filluce.tistory.com%2Fcategory%2FPortrait%2FPhotographer%2527s%2520cut%3Fpage%3D1";
 		} else {
 			window.focus();
 		}
 	}
-
 	function commentObserverForAuth(evetObj) {
 		var reex = /name|password|homepage|secret|comment/;
 		if (isIE)
@@ -242,13 +241,12 @@ var SCRIPT_VERSION = '35299';
 		else
 			var	name = evetObj.target.name
 		if(reex.test(name) && !(new RegExp("^entry\\d+password$").test(name))) {
-			commentRequireLoginByDormancy();
+			commentRequireLogin();
 		}
 	}
 
 	STD.addEventListener(document);
 	document.addEventListener("click", commentObserverForAuth, false);
-
 	var openWindow='';
 	function alignCenter(win,width,height) {
 		if(navigator.userAgent.indexOf("Chrome") == -1)
@@ -446,12 +444,12 @@ var SCRIPT_VERSION = '35299';
 <!-- 본문검색리스트 -->
 				
 					<div id="searchList" class="nonEntry">
-						<h3>'Portrait/Photographer's cut'에 해당되는 글 26건</h3>
+						<h3>'Portrait/Photographer's cut'에 해당되는 글 33건</h3>
 						<ol>
 							
 								<li>
-									<span class="date">2011/02/01</span>
-									<a href="/entry/into-the-frame">into the frame...</a>
+									<span class="date">2014/01/23</span>
+									<a href="/entry/허윤미-5">허윤미</a>
 									<span class="cnt"></span>
 								</li>
 							
@@ -468,56 +466,118 @@ var SCRIPT_VERSION = '35299';
 				
 					<div class="entry">
 						<div class="titleWrap floatWrapper">
-							<div class="dateImg"><span class="imgdate">2011/02/01 15:23</span></div>
+							<div class="dateImg"><span class="imgdate">2014/01/23 09:42</span></div>
 							<div class="title-right">
 								<div class="category"><a href="/category/Portrait/Photographer%27s%20cut">Portrait/Photographer's cut</a></div>
-								<h2><a href="/entry/into-the-frame">into the frame...</a></h2>
+								<h2><a href="/entry/허윤미-5">허윤미</a></h2>
 <!-- 포스트관리 -->
 								
 							</div><!-- close right -->
 						</div><!-- close wrap -->
 <!-- 포스트 본문 내용 -->
 						<div class="article">
-							<br />
-<div class="imageblock center" style="text-align: center; clear: both;"><img src="http://cfile29.uf.tistory.com/image/145F513E4D47A5271E40C5" alt="" height="600" width="900"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:900px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS 5D Mark II<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Pattern<span class="exifBar"> | </span></span><span>1/160sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>70.0mm<span class="exifBar"> | </span></span><span>ISO-200<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2011:01:20 20:23:10</span></span></div><br /><span id="callbacknestillucetistorycom1026485" style="width:1px; height:1px; float:right"><embed  allowscriptaccess="always"  id="bootstrapperillucetistorycom1026485"  src="http://illuce.tistory.com/plugin/CallBack_bootstrapperSrc?nil_profile=tistory&amp;nil_type=copied_post"  width="1"  height="1"  wmode="transparent"  type="application/x-shockwave-flash"  EnableContextMenu="false"  FlashVars="&amp;callbackId=illucetistorycom1026485&amp;host=http://illuce.tistory.com&amp;embedCodeSrc=http%3A%2F%2Filluce.tistory.com%2Fplugin%2FCallBack_bootstrapper%3F%26src%3Dhttp%3A%2F%2Fs1.daumcdn.net%2Fcfs.tistory%2Fv%2F0%2Fblog%2Fplugins%2FCallBack%2Fcallback%26id%3D102%26callbackId%3Dillucetistorycom1026485%26destDocId%3Dcallbacknestillucetistorycom1026485%26host%3Dhttp%3A%2F%2Filluce.tistory.com%26float%3Dleft" swLiveConnect="true"/></span>
-틀을 벗어나려고 이리 비틀고 저리 꿈틀대봐도...<br />
-<br />결국에 다시 틀속에...<br />
-<br />시간이 갈수록 더 많은 틀속에 나 스스로를 가둬버린건 아닌지...<br />
-<br />그 틀 너머의 대한 동경...<br />
-<br />Model : 허윤미..<br />
-<br /><div style="text-align: center"><div id="jukeBox1022Div" style="width:250px; height:27px; margin: 0 auto;"><div id="jukeBoxContainer1022" style="width:250px; height:27px;"></div><script type="text/javascript">//<![CDATA[
-writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukebox/flash/main.swf','100%','100%','jukeBox1022Flash','#FFFFFF',"sounds=http%3A%2F%2Fcfile23.uf.tistory.com%2Foriginal%2F155EB6424D47A6A0238DE1*!%EC%97%90%EC%BD%94+%EB%B8%8C%EB%A6%BF%EC%A7%80+-+Old+Letter+%28Instrumental%29.mp3_*&amp;autoplay=1&amp;visible=1&amp;id=1022","false", "transparent"), "jukeBoxContainer1022")//]]></script><noscript><a href="http://cfile23.uf.tistory.com/original/155EB6424D47A6A0238DE1">에코 브릿지 - Old Letter (Instrumental).mp3</a><br/></noscript></div></div><br />
-<br /><div class="blogger-news-widget" style="width: 100%; text-align: center">
-			  				<iframe width="100%" height="44px" src="http://api.v.daum.net/widget3?nid=13612504" frameborder="no"></iframe>
-						</div>
+							<div class="tt_article_useless_p_margin"><span id="callbacknestillucetistorycom1407193" style="width:1px; height:1px; float:right"><embed  allowscriptaccess="always"  id="bootstrapperillucetistorycom1407193"  src="http://illuce.tistory.com/plugin/CallBack_bootstrapperSrc?nil_profile=tistory&amp;nil_type=copied_post"  width="1"  height="1"  wmode="transparent"  type="application/x-shockwave-flash"  EnableContextMenu="false"  FlashVars="&amp;callbackId=illucetistorycom1407193&amp;host=http://illuce.tistory.com&amp;embedCodeSrc=http%3A%2F%2Filluce.tistory.com%2Fplugin%2FCallBack_bootstrapper%3F%26src%3Dhttp%3A%2F%2Fs1.daumcdn.net%2Fcfs.tistory%2Fv%2F0%2Fblog%2Fplugins%2FCallBack%2Fcallback%26id%3D140%26callbackId%3Dillucetistorycom1407193%26destDocId%3Dcallbacknestillucetistorycom1407193%26host%3Dhttp%3A%2F%2Filluce.tistory.com%26float%3Dleft" swLiveConnect="true"/></span><P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><div id="d_playerA_140_A000102100016401_1">
+<script type="text/javascript">
+	var so = new SWFObject("http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/playerA.swf", "f_playerA_140_A000102100016401_1", "300", "31", "9.0.115");
+	so.addParam("allowScriptAccess", "always");
+	so.addParam("allowFullScreen", "false");
+	so.addParam("quality", "high");
+	so.addParam("bgcolor", "#ffffff");
+	so.addParam("wmode", "transparent");
+	so.addParam("scale", "noscale");
+	so.addParam("menu", "false");
+	so.addParam("align", "center");
+	so.addParam("salign", "t");
+	so.addVariable("tistoryFullPath", "false");
+	so.addVariable("bgmtrackid", "A000102100016401");
+	so.addVariable("debugMode", "false");
+	so.addVariable("message", "");
+	so.addVariable("autoRun", "false");
+	so.addVariable("playerControl", "playerControl");
+	so.write("d_playerA_140_A000102100016401_1");
+
+	playerControl("f_playerA_140_A000102100016401_1",'add');
+</script>
+</div>
+</P>
+<P style="TEXT-ALIGN: center"></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:1000px;;height:auto"><img src="http://cfile29.uf.tistory.com/image/2766013352E06433266573" style="cursor: pointer;" onclick="open_img('http://cfile29.uf.tistory.com/original/2766013352E06433266573')"  height="667" width="1000" /><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; '><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/100sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>61.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 15:25:35</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:936px;;height:auto"><img src="http://cfile6.uf.tistory.com/image/2765D33352E06434251F13"  height="1404" width="936"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:936px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/160sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>39.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 13:52:07</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:936px;;height:auto"><img src="http://cfile27.uf.tistory.com/image/276F463352E064351F8080"  height="1404" width="936"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:936px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/160sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>57.0mm<span class="exifBar"> | </span></span><span>ISO-640<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 12:51:27</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:953px;;height:auto"><img src="http://cfile21.uf.tistory.com/image/267D373352E0643617597D"  height="1404" width="953"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:953px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/100sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>28.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 15:17:10</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:1000px;;height:auto"><img src="http://cfile3.uf.tistory.com/image/2774B23352E064371DCD9A" style="cursor: pointer;" onclick="open_img('http://cfile3.uf.tistory.com/original/2774B23352E064371DCD9A')"  height="667" width="1000" /><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; '><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/160sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>70.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 13:48:47</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:1000px;;height:auto"><img src="http://cfile26.uf.tistory.com/image/266C9D3352E06438212A8F" style="cursor: pointer;" onclick="open_img('http://cfile26.uf.tistory.com/original/266C9D3352E06438212A8F')"  height="667" width="1000" /><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; '><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/125sec<span class="exifBar"> | </span></span><span>F/3.5<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>28.0mm<span class="exifBar"> | </span></span><span>ISO-640<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 12:30:46</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:936px;;height:auto"><img src="http://cfile22.uf.tistory.com/image/266CF83352E064382016B3"  height="1404" width="936"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:936px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/100sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>47.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 14:39:39</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:936px;;height:auto"><img src="http://cfile7.uf.tistory.com/image/2660F63952E06439274470"  height="1404" width="936"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:936px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/125sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>28.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 15:41:43</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:936px;;height:auto"><img src="http://cfile27.uf.tistory.com/image/2543E53952E0643A2D3016"  height="1404" width="936"/><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; width:936px;'><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/160sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>35.0mm<span class="exifBar"> | </span></span><span>ISO-640<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 12:51:51</span></span></span></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="FLOAT: none; TEXT-ALIGN: center; CLEAR: none"><span class="imageblock" style="display:inline-block;width:1000px;;height:auto"><img src="http://cfile25.uf.tistory.com/image/26789F3952E0643B202A78" style="cursor: pointer;" onclick="open_img('http://cfile25.uf.tistory.com/original/26789F3952E0643B202A78')"  height="675" width="1000" /><span class='ExifInfo' style='display: block; margin-left:auto; margin-right:auto; text-align: center; '><span>Canon<span class="exifBar"> | </span></span><span>Canon EOS-1D X<span class="exifBar"> | </span></span><span>Manual<span class="exifBar"> | </span></span><span>Spot<span class="exifBar"> | </span></span><span>1/100sec<span class="exifBar"> | </span></span><span>F/2.8<span class="exifBar"> | </span></span><span>0.00 EV<span class="exifBar"> | </span></span><span>50.0mm<span class="exifBar"> | </span></span><span>ISO-400<span class="exifBar"> | </span></span><span>Off Compulsory<span class="exifBar"> | </span></span><span>2014:01:06 15:28:41</span></span></span></P>
+<P style="TEXT-ALIGN: center"></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">허.윤.미</SPAN></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">...어떤 컨셉...</SPAN></P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">...어떤 표정...</SPAN></P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">...어떤 몸짓...</SPAN></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">결국엔 허윤미화 스스로 소화시켜</SPAN></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">더 폭발적인것을 만들어내는....</SPAN></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><SPAN style="COLOR: #ffffff; BACKGROUND-COLOR: #ffbb00"></SPAN></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><SPAN style="FONT-FAMILY: Verdana">무서운 Model!!</SPAN></P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center">&nbsp;</P>
+<P style="TEXT-ALIGN: center"><STRONG><SPAN style="FONT-SIZE: 11pt; FONT-FAMILY: Verdana; COLOR: #000000; BACKGROUND-COLOR: #ffffff">모델 허윤미 팬카페 : http://cafe.daum.net/s-yunmi</SPAN></STRONG></P><div class="blogger-news-widget" style="width: 100%; text-align: center">
+			  				<iframe width="100%" height="44px" src="http://api.v.daum.net/widget3?nid=52473062" frameborder="no"></iframe>
+						</div></div>
 						</div><!-- close article -->
 						<!-- article 뒤에 오는 마크업엔 반드시 clear:both 를 지정해준다 -->
 						<div class="author">Posted by IL Luce</div>
 <!-- 태그트레일 -->
 						
 							<div class="tagTrail floatWrapper">
-								<span class="tagHead">TAG</span><span class="tagText"> <a href="/tag/아미고스스튜디오"  rel="tag">아미고스스튜디오</a>,
-<a href="/tag/인피니티포토뱅크"  rel="tag">인피니티포토뱅크</a>,
+								<span class="tagHead">TAG</span><span class="tagText"> <a href="/tag/레이싱모델"  rel="tag">레이싱모델</a>,
+<a href="/tag/윤미"  rel="tag">윤미</a>,
 <a href="/tag/허윤미"  rel="tag">허윤미</a></span>
 							</div><!-- close tagTrail -->
 						
 						<div class="actionTrail">
-							<a href="#tb" onclick="toggleLayerForEntry(102, 'trackback'); return false" title="트랙백" class="tb"><span id="trackbackCount102"><span class="txt">트랙백</span><span class="cnt">0</span></span></a>
-							<a href="#rp" onclick="toggleLayerForEntry('102', 'comment'); return false" title="댓글" class="rp"><span id="commentCount102"><span class="txt">댓글</span><span class="cnt">0</span></span></a>
+							<a href="#tb" onclick="toggleLayerForEntry(140, 'trackback'); return false" title="트랙백" class="tb"><span id="trackbackCount140"><span class="txt">트랙백</span><span class="cnt">0</span></span></a>
+							<a href="#rp" onclick="toggleLayerForEntry('140', 'comment'); return false" title="댓글" class="rp"><span id="commentCount140"><span class="txt">댓글</span><span class="cnt">0</span></span></a>
 						</div>
 <!-- 트랙백 -->
-						<div id="entry102Trackback" style="display:none">
+						<div id="entry140Trackback" style="display:none">
 							<div class="trackback">
-								<h3><span class="txt">트랙백 주소</span>	<span class="trackback-url" style="cursor: text">http://illuce.tistory.com/trackback/102</span>
-	<span id="TrackbackCopyHolder102" style="vertical-align: -4px; margin-left: 1px">
+								<h3><span class="txt">트랙백 주소</span>	<span class="trackback-url" style="cursor: text">http://illuce.tistory.com/trackback/140</span>
+	<span id="TrackbackCopyHolder140" style="vertical-align: -4px; margin-left: 1px">
 	<script type="text/javascript">
 	//<![CDATA[
 	AC_FL_RunContent(
 		'src','http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback',
-		'Flashvars','url=http://illuce.tistory.com/trackback/102&mode=whiteButton',
+		'Flashvars','url=http://illuce.tistory.com/trackback/140&mode=whiteButton',
 		'width','29',
 		'height','18',
-		'id', 'TrackbackCopyButton102',
+		'id', 'TrackbackCopyButton140',
 		'wmode','transparent',
 		'allowScriptAccess','always',
 		'type','application/x-shockwave-flash',
@@ -527,36 +587,36 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 	</script>
 	</span>
 	<span>
-		<a href="http://www.tistory.com/gateway/?trackback=http%3A%2F%2Filluce.tistory.com%2Ftrackback%2F102&amp;defaultAdmin=%2Fadmin" onclick="window.open(this.href); return false">
+		<a href="http://www.tistory.com/gateway/?trackback=http%3A%2F%2Filluce.tistory.com%2Ftrackback%2F140&amp;defaultAdmin=%2Fadmin" onclick="window.open(this.href); return false">
 	<img src="http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/btn_track_white.gif" alt="관련글 쓰기" title="" style="_margin-left: 5px; vertical-align: -4px"/>
 	</a></span>
 </h3>
 								
 							</div><!-- close trackback -->
 						</div>
-						<div id="entry102Comment" style="display:none"></div>
+						<div id="entry140Comment" style="display:none"></div>
 					</div><!-- close entry -->
 				
 <!-- 페이지 -->
 				
 					<div id="paging">
-						<a href='/category/Portrait/Photographer%27s%20cut?page=25' class="" id="prevPage" title="이전페이지"><img src="http://ts.daumcdn.net/custom/blog/27/279973/skin/images/iconPrev.png" alt="이전버튼" class="png24" /></a>
+						<a  class="no-more-prev" id="prevPage" title="이전페이지"><img src="http://ts.daumcdn.net/custom/blog/27/279973/skin/images/iconPrev.png" alt="이전버튼" class="png24" /></a>
 						<span class="numbox">
 							
-							<a href='/category/Portrait/Photographer%27s%20cut?page=1' class="num"><span>1</span></a>
+							<a  class="num"><span class="selected" >1</span></a>
+							
+							<a href='/category/Portrait/Photographer%27s%20cut?page=2' class="num"><span>2</span></a>
+							
+							<a href='/category/Portrait/Photographer%27s%20cut?page=3' class="num"><span>3</span></a>
+							
+							<a href='/category/Portrait/Photographer%27s%20cut?page=4' class="num"><span>4</span></a>
+							
+							<a href='/category/Portrait/Photographer%27s%20cut?page=5' class="num"><span>5</span></a>
 							 <span class="interword">...</span> 
-							<a href='/category/Portrait/Photographer%27s%20cut?page=22' class="num"><span>22</span></a>
-							
-							<a href='/category/Portrait/Photographer%27s%20cut?page=23' class="num"><span>23</span></a>
-							
-							<a href='/category/Portrait/Photographer%27s%20cut?page=24' class="num"><span>24</span></a>
-							
-							<a href='/category/Portrait/Photographer%27s%20cut?page=25' class="num"><span>25</span></a>
-							
-							<a  class="num"><span class="selected" >26</span></a>
+							<a href='/category/Portrait/Photographer%27s%20cut?page=33' class="num"><span>33</span></a>
 							
 						</span>
-						<a  class="no-more-next" id="nextPage" title="다음페이지"><img src="http://ts.daumcdn.net/custom/blog/27/279973/skin/images/iconNext.png" alt="이전버튼" class="png24" /></a>
+						<a href='/category/Portrait/Photographer%27s%20cut?page=2' class="" id="nextPage" title="다음페이지"><img src="http://ts.daumcdn.net/custom/blog/27/279973/skin/images/iconNext.png" alt="이전버튼" class="png24" /></a>
 					</div>
 				
 
@@ -594,9 +654,9 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 <!-- 카운터 모듈 -->
 						<div id="counter">
 							<ul>
-								<li class="total">Total <span>45,514</span></li>
-								<li class="today">Today <span>87</span></li>
-								<li class="yesterday">Yesterday <span>37</span></li>
+								<li class="total">Total <span>61,199</span></li>
+								<li class="today">Today <span>99</span></li>
+								<li class="yesterday">Yesterday <span>308</span></li>
 							</ul>
 						</div>
 					
@@ -616,7 +676,7 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 <!-- 카테고리 모듈 -->
 						<div id="category">
 							<h3 class="stit">카테고리</h3>
-							<ul><li><a href="/category">All <span class="c_cnt">(131)</span> <img src=http://i1.daumcdn.net/cfs.tistory/v/111024161605/blog/image/category/new_ico_5.gif alt="N" style='vertical-align:middle;padding-left:2px;' /></a><ul><li><a href="/category/Portrait">Portrait <span class="c_cnt">(40)</span> <img src=http://i1.daumcdn.net/cfs.tistory/v/111024161605/blog/image/category/new_ico_5.gif alt="N" style='vertical-align:middle;padding-left:2px;' /></a><ul><li><a href="/category/Portrait/Ordinary">Ordinary <span class="c_cnt">(2)</span></a></li><li><a href="/category/Portrait/An%20event">An event <span class="c_cnt">(12)</span></a></li><li><a href="/category/Portrait/Photographer%27s%20cut">Photographer's cut <span class="c_cnt">(26)</span> <img src=http://i1.daumcdn.net/cfs.tistory/v/111024161605/blog/image/category/new_ico_5.gif alt="N" style='vertical-align:middle;padding-left:2px;' /></a></li></ul></li><li><a href="/category/Landscape">Landscape <span class="c_cnt">(38)</span></a><ul><li><a href="/category/Landscape/On%20my%20journey%20...">On my journey ... <span class="c_cnt">(20)</span></a></li><li><a href="/category/Landscape/Daylight">Daylight <span class="c_cnt">(9)</span></a></li><li><a href="/category/Landscape/Night">Night <span class="c_cnt">(8)</span></a></li><li><a href="/category/Landscape/Architecture">Architecture <span class="c_cnt">(1)</span></a></li></ul></li><li><a href="/category/Hue%20%26%20Taste">Hue &amp; Taste <span class="c_cnt">(19)</span></a><ul><li><a href="/category/Hue%20%26%20Taste/Hue">Hue <span class="c_cnt">(4)</span></a></li><li><a href="/category/Hue%20%26%20Taste/Taste">Taste <span class="c_cnt">(15)</span></a></li></ul></li><li><a href="/category/etc...">etc... <span class="c_cnt">(32)</span></a><ul><li><a href="/category/etc.../두눈으로%20세상을%20담고...">두눈으로 세상을 담고... <span class="c_cnt">(14)</span></a></li><li><a href="/category/etc.../생각을%20토해내다...">생각을 토해내다... <span class="c_cnt">(18)</span></a></li></ul></li><li><a href="/category/From%20Mobile..">From Mobile.. <span class="c_cnt">(2)</span></a></li></ul></li></ul>
+							<ul><li><a href="/category">All <span class="c_cnt">(138)</span> <img src=http://i1.daumcdn.net/cfs.tistory/v/111024161605/blog/image/category/new_ico_5.gif alt="N" style='vertical-align:middle;padding-left:2px;' /></a><ul><li><a href="/category/Portrait">Portrait <span class="c_cnt">(47)</span> <img src=http://i1.daumcdn.net/cfs.tistory/v/111024161605/blog/image/category/new_ico_5.gif alt="N" style='vertical-align:middle;padding-left:2px;' /></a><ul><li><a href="/category/Portrait/Ordinary">Ordinary <span class="c_cnt">(2)</span></a></li><li><a href="/category/Portrait/An%20event">An event <span class="c_cnt">(12)</span></a></li><li><a href="/category/Portrait/Photographer%27s%20cut">Photographer's cut <span class="c_cnt">(33)</span> <img src=http://i1.daumcdn.net/cfs.tistory/v/111024161605/blog/image/category/new_ico_5.gif alt="N" style='vertical-align:middle;padding-left:2px;' /></a></li></ul></li><li><a href="/category/Landscape">Landscape <span class="c_cnt">(38)</span></a><ul><li><a href="/category/Landscape/On%20my%20journey%20...">On my journey ... <span class="c_cnt">(20)</span></a></li><li><a href="/category/Landscape/Daylight">Daylight <span class="c_cnt">(9)</span></a></li><li><a href="/category/Landscape/Night">Night <span class="c_cnt">(8)</span></a></li><li><a href="/category/Landscape/Architecture">Architecture <span class="c_cnt">(1)</span></a></li></ul></li><li><a href="/category/Hue%20%26%20Taste">Hue &amp; Taste <span class="c_cnt">(19)</span></a><ul><li><a href="/category/Hue%20%26%20Taste/Hue">Hue <span class="c_cnt">(4)</span></a></li><li><a href="/category/Hue%20%26%20Taste/Taste">Taste <span class="c_cnt">(15)</span></a></li></ul></li><li><a href="/category/etc...">etc... <span class="c_cnt">(32)</span></a><ul><li><a href="/category/etc.../두눈으로%20세상을%20담고...">두눈으로 세상을 담고... <span class="c_cnt">(14)</span></a></li><li><a href="/category/etc.../생각을%20토해내다...">생각을 토해내다... <span class="c_cnt">(18)</span></a></li></ul></li><li><a href="/category/From%20Mobile..">From Mobile.. <span class="c_cnt">(2)</span></a></li></ul></li></ul>
 						</div>
 					
 <!-- 태그목록 모듈 -->
@@ -624,65 +684,65 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 							<h3>태그목록</h3>
 							<ul>
 								
-									<li><a href="/tag/레이싱모델" class="cloud3"> 레이싱모델</a></li>
-								
-									<li><a href="/tag/산주산겐도" class="cloud5"> 산주산겐도</a></li>
-								
-									<li><a href="/tag/류지혜" class="cloud4"> 류지혜</a></li>
-								
-									<li><a href="/tag/가을" class="cloud5"> 가을</a></li>
-								
-									<li><a href="/tag/해운대" class="cloud4"> 해운대</a></li>
-								
-									<li><a href="/tag/거울" class="cloud5"> 거울</a></li>
-								
-									<li><a href="/tag/니조성" class="cloud5"> 니조성</a></li>
-								
-									<li><a href="/tag/계절" class="cloud5"> 계절</a></li>
-								
-									<li><a href="/tag/간사이여행" class="cloud3"> 간사이여행</a></li>
-								
-									<li><a href="/tag/도시야경" class="cloud5"> 도시야경</a></li>
-								
-									<li><a href="/tag/기억" class="cloud4"> 기억</a></li>
-								
-									<li><a href="/tag/한가은" class="cloud4"> 한가은</a></li>
-								
-									<li><a href="/tag/모픽스" class="cloud5"> 모픽스</a></li>
-								
-									<li><a href="/tag/철학의%20길" class="cloud5"> 철학의 길</a></li>
-								
-									<li><a href="/tag/난젠지" class="cloud5"> 난젠지</a></li>
-								
-									<li><a href="/tag/스튜디오%20미장센" class="cloud5"> 스튜디오 미장센</a></li>
-								
-									<li><a href="/tag/모델" class="cloud4"> 모델</a></li>
+									<li><a href="/tag/일몰" class="cloud4"> 일몰</a></li>
 								
 									<li><a href="/tag/야경" class="cloud3"> 야경</a></li>
 								
-									<li><a href="/tag/MOPIX" class="cloud5"> MOPIX</a></li>
+									<li><a href="/tag/빛" class="cloud4"> 빛</a></li>
 								
-									<li><a href="/tag/김하율" class="cloud5"> 김하율</a></li>
+									<li><a href="/tag/기억" class="cloud4"> 기억</a></li>
 								
-									<li><a href="/tag/거울을%20보다가" class="cloud5"> 거울을 보다가</a></li>
+									<li><a href="/tag/사랑" class="cloud4"> 사랑</a></li>
 								
-									<li><a href="/tag/은빈" class="cloud5"> 은빈</a></li>
+									<li><a href="/tag/레이싱모델" class="cloud3"> 레이싱모델</a></li>
 								
-									<li><a href="/tag/용마랜드" class="cloud5"> 용마랜드</a></li>
+									<li><a href="/tag/노을" class="cloud4"> 노을</a></li>
 								
-									<li><a href="/tag/낙엽" class="cloud5"> 낙엽</a></li>
+									<li><a href="/tag/윤미" class="cloud4"> 윤미</a></li>
 								
-									<li><a href="/tag/허윤미" class="cloud1"> 허윤미</a></li>
+									<li><a href="/tag/하늘" class="cloud4"> 하늘</a></li>
 								
-									<li><a href="/tag/이아린" class="cloud5"> 이아린</a></li>
+									<li><a href="/tag/벚꽃" class="cloud4"> 벚꽃</a></li>
 								
-									<li><a href="/tag/교토" class="cloud3"> 교토</a></li>
+									<li><a href="/tag/일출" class="cloud4"> 일출</a></li>
 								
-									<li><a href="/tag/오정선" class="cloud5"> 오정선</a></li>
+									<li><a href="/tag/모델" class="cloud4"> 모델</a></li>
 								
-									<li><a href="/tag/피터하우스%20스튜디오" class="cloud5"> 피터하우스 스튜디오</a></li>
+									<li><a href="/tag/부산국제영화제" class="cloud4"> 부산국제영화제</a></li>
 								
-									<li><a href="/tag/통도사" class="cloud5"> 통도사</a></li>
+									<li><a href="/tag/PIFF" class="cloud4"> PIFF</a></li>
+								
+									<li><a href="/tag/통영맛집" class="cloud4"> 통영맛집</a></li>
+								
+									<li><a href="/tag/부산국제모터쇼" class="cloud4"> 부산국제모터쇼</a></li>
+								
+									<li><a href="/tag/해운대" class="cloud4"> 해운대</a></li>
+								
+									<li><a href="/tag/석양" class="cloud4"> 석양</a></li>
+								
+									<li><a href="/tag/교토" class="cloud4"> 교토</a></li>
+								
+									<li><a href="/tag/바다" class="cloud4"> 바다</a></li>
+								
+									<li><a href="/tag/일본여행" class="cloud4"> 일본여행</a></li>
+								
+									<li><a href="/tag/허윤미" class="cloud2"> 허윤미</a></li>
+								
+									<li><a href="/tag/크리스마스" class="cloud4"> 크리스마스</a></li>
+								
+									<li><a href="/tag/주산지" class="cloud4"> 주산지</a></li>
+								
+									<li><a href="/tag/추억" class="cloud4"> 추억</a></li>
+								
+									<li><a href="/tag/모터쇼" class="cloud4"> 모터쇼</a></li>
+								
+									<li><a href="/tag/BIMOS" class="cloud4"> BIMOS</a></li>
+								
+									<li><a href="/tag/그리움" class="cloud4"> 그리움</a></li>
+								
+									<li><a href="/tag/중국요리" class="cloud4"> 중국요리</a></li>
+								
+									<li><a href="/tag/간사이여행" class="cloud4"> 간사이여행</a></li>
 								
 							</ul>
 						</div>
@@ -694,28 +754,28 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 							<ul>
 								
 									<li>
-										<a href="/entry/Yunmi">허 윤 미.</a>
-										<span class="cnt"><span id="commentCountOnRecentEntries133"></span></span>
+										<a href="/entry/허윤미-5">허윤미.</a>
+										<span class="cnt"><span id="commentCountOnRecentEntries140"></span></span>
 									</li>
 								
 									<li>
-										<a href="/entry/httpillucetistorycom1">Red...Black...Yellow....</a>
-										<span class="cnt"><span id="commentCountOnRecentEntries132"></span></span>
+										<a href="/entry/허-윤-미">허 윤 미.</a>
+										<span class="cnt"><span id="commentCountOnRecentEntries139"></span></span>
 									</li>
 								
 									<li>
-										<a href="/entry/3-differentModel-허윤미">3 different..(Model ; 허...</a>
-										<span class="cnt"><span id="commentCountOnRecentEntries131"></span></span>
+										<a href="/entry/허윤미-4">허윤미.</a>
+										<span class="cnt"><span id="commentCountOnRecentEntries138"></span></span>
 									</li>
 								
 									<li>
-										<a href="/entry/So-Fresh">So Fresh...(Model ; 허윤미).</a>
-										<span class="cnt"><span id="commentCountOnRecentEntries130"></span></span>
+										<a href="/entry/허윤미-3">허윤미.</a>
+										<span class="cnt"><span id="commentCountOnRecentEntries137"></span></span>
 									</li>
 								
 									<li>
-										<a href="/entry/She">She....(Model ; 허윤미).</a>
-										<span class="cnt"><span id="commentCountOnRecentEntries129"></span></span>
+										<a href="/entry/허윤미-2">허윤미.</a>
+										<span class="cnt"><span id="commentCountOnRecentEntries136"></span></span>
 									</li>
 								
 							</ul>
@@ -730,7 +790,7 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 										<a href="/115#comment10729161">speecless............. beuty...</a>
 										<span class="info">
 											<span class="name">Clara-Id</span>
-											<span class="date">02/06</span>
+											<span class="date">2013</span>
 										</span>
 									</li>
 								
@@ -806,7 +866,7 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 						<div class="line-dot"></div>
 						<div id="calendar" class="floatWrapper">
 							
-							<div class="caption"><a href="/archive/201310" title="현재 달의 달력을 보여줍니다." class="this">2013.10</a><a href="/archive/201309" title="1개월 앞의 달력을 보여줍니다." class="prev">&nbsp;<span>&laquo;</span></a><a href="/archive/201311" title="1개월 뒤의 달력을 보여줍니다." class="next">&nbsp;<span>&raquo;</span></a></div>
+							<div class="caption"><a href="/archive/201401" title="현재 달의 달력을 보여줍니다." class="this">2014.01</a><a href="/archive/201312" title="1개월 앞의 달력을 보여줍니다." class="prev">&nbsp;<span>&laquo;</span></a><a href="/archive/201402" title="1개월 뒤의 달력을 보여줍니다." class="next">&nbsp;<span>&raquo;</span></a></div>
 							<table class="tt-calendar" cellpadding="0" cellspacing="0" style="table-layout: fixed">
 								
 								<thead>
@@ -838,6 +898,8 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 										
 										<td class="cal_day1">&nbsp;</td>
 										
+										<td class="cal_day1">&nbsp;</td>
+										
 										<td class="cal_day cal_day3">1</td>
 										
 										<td class="cal_day cal_day3">2</td>
@@ -846,31 +908,31 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 										
 										<td class="cal_day cal_day3">4</td>
 										
-										<td class="cal_day cal_day3">5</td>
+									</tr>
+									
+									<tr class="cal_week">
+										
+										<td class="cal_day cal_day3 cal_day_sunday">5</td>
+										
+										<td class="cal_day cal_day3">6</td>
+										
+										<td class="cal_day cal_day3">7</td>
+										
+										<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20140108">8</a></td>
+										
+										<td class="cal_day cal_day3">9</td>
+										
+										<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20140110">10</a></td>
+										
+										<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20140111">11</a></td>
 										
 									</tr>
 									
 									<tr class="cal_week">
 										
-										<td class="cal_day cal_day3 cal_day_sunday">6</td>
+										<td class="cal_day cal_day3 cal_day_sunday">12</td>
 										
-										<td class="cal_day cal_day3">7</td>
-										
-										<td class="cal_day cal_day3">8</td>
-										
-										<td class="cal_day cal_day3">9</td>
-										
-										<td class="cal_day cal_day3">10</td>
-										
-										<td class="cal_day cal_day3">11</td>
-										
-										<td class="cal_day cal_day3">12</td>
-										
-									</tr>
-									
-									<tr class="cal_week cal_current_week">
-										
-										<td class="cal_day cal_day4 cal_day_sunday">13</td>
+										<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20140113">13</a></td>
 										
 										<td class="cal_day cal_day3">14</td>
 										
@@ -882,31 +944,31 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 										
 										<td class="cal_day cal_day3">18</td>
 										
-										<td class="cal_day cal_day3">19</td>
-										
 									</tr>
 									
 									<tr class="cal_week">
 										
-										<td class="cal_day cal_day3 cal_day_sunday">20</td>
+										<td class="cal_day cal_day3 cal_day_sunday">19</td>
+										
+										<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20140120">20</a></td>
 										
 										<td class="cal_day cal_day3">21</td>
 										
 										<td class="cal_day cal_day3">22</td>
 										
-										<td class="cal_day cal_day3">23</td>
+										<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20140123">23</a></td>
 										
 										<td class="cal_day cal_day3">24</td>
 										
 										<td class="cal_day cal_day3">25</td>
 										
-										<td class="cal_day cal_day3">26</td>
-										
 									</tr>
 									
-									<tr class="cal_week">
+									<tr class="cal_week cal_current_week">
 										
-										<td class="cal_day cal_day3 cal_day_sunday">27</td>
+										<td class="cal_day cal_day3 cal_day_sunday">26</td>
+										
+										<td class="cal_day cal_day4">27</td>
 										
 										<td class="cal_day cal_day3">28</td>
 										
@@ -915,8 +977,6 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 										<td class="cal_day cal_day3">30</td>
 										
 										<td class="cal_day cal_day3">31</td>
-										
-										<td class="cal_day2">&nbsp;</td>
 										
 										<td class="cal_day2">&nbsp;</td>
 										
@@ -952,14 +1012,14 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 		__pageTracker.__setTitle = function() {};
 	}
 
-	__pageTracker.__setTitle("Photo by IL Luce :: into the frame...");
+	__pageTracker.__setTitle("Photo by IL Luce :: 허윤미");
 	__pageTracker.__addParam("svcdomain","user.tistory.com");
 	__pageTracker.__addParam("category","");
-	__pageTracker.__addParam("articleno","102");
-	__pageTracker.__addParam("plink","http://illuce.tistory.com/102");
-	__pageTracker.__addParam("date","2011-02-01 15:23:09");
+	__pageTracker.__addParam("articleno","140");
+	__pageTracker.__addParam("plink","http://illuce.tistory.com/140");
+	__pageTracker.__addParam("date","2014-01-23 09:42:36");
 	__pageTracker.__addParam("author","illuce");
-	__pageTracker.__addParam("length ","598");
+	__pageTracker.__addParam("length ","4229");
 	__pageTracker.__addParam("isauthor","N");
 	__pageTracker.__addParam("ishidden","1");
 	__pageTracker.__addParam("comments","0");
@@ -967,7 +1027,7 @@ writeCode2(getEmbedCode('http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/jukeb
 	__pageTracker.__addParam("param2","e");
 	__pageTracker.__addParam("param3","");
 
-	window.setTimeout("try { __pageTracker.__trackPageview('http://illuce.tistory.com/category/Portrait/Photographer%27s%20cut?page=26'); } catch(e) {}", 1);
+	window.setTimeout("try { __pageTracker.__trackPageview('http://illuce.tistory.com/category/Portrait/Photographer%27s%20cut?page=1'); } catch(e) {}", 1);
 //]]>-->
 </script></body>
 </html>
